@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Lists</title>
+    <link rel="stylesheet" href="../css/Lists.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+
+    <meta name="NetsparkQuiltingResult" total-length="6158" removed="0" rules-found="w3425,w6962,w2637,w3013,w2559,w5015,w4780,w6960,w10432,w10433,w2953" />
+</head>
+<main>
+    <div id="contain">
+    </div>
+</main>
+
+<template id="welcome" class="page">
+
+    <body dir="rtl" font-family: Arial, Helvetica, sans-serif;>
+        <nav class="menu">
+            <a class="link-btn" href="#logIn" data-target="logIn">Log In</a>
+            <a class="link-btn" href="#signIn" data-target="signUp">Sign In</a>
+            <a class="link-btn" href="#allLists" data-target="myLists">My Lists</a>
+        </nav>
+        <h1 id="hello11">Welcome To MY Lists</h1>
+    </body>
+    <h1 id="hello">Welcome To MY Lists</h1>
+</template>
+<template id="logIn" class="page">
+    <form id="form">
+        <ul id="tabs" class="register-buttons active">
+            <li class="tab active">
+                <a class="link-btn" href="#signIn" data-target="signUp">Sign In</a>
+            </li>
+            <li class="tab">
+                <a href="#logInForm" class="link-btn">Log In</a>
+            </li>
+        </ul>
+
+        <div"logInForm">
+            <h1>Welcome Back!</h1>
+
+            <div class="User-fill">
+                <input class="input" id="userEmail" type="email" placeholder="Email Address" autocomplete="off"
+                    required />
+            </div>
+
+            <div class="User-fill">
+                <input class="input" id="userPassword" type="password" placeholder="Password" autocomplete="off"
+                    required />
+            </div>
+
+            <button type="button" id="logIn" class="button button-block">LogIn</button>
+            </div>
+    </form>
+    </body>
+    <script src="../js/logIn.js"></script>
+</template>
+<template id="signIn" class="page">
+
+    <body>
+        <form id="form">
+            <ul id="tabs" class="register-buttons active">
+                <li class="tab active">
+                    <a class="link-btn" href="#signIn" data-target="signUp">Sign In</a>
+                    <a class="link-btn" href="#logIn" data-target="logIn">Log In</a>
+                </li>
+                <li class="tab">
+                </li>
+            </ul>
+
+            <div class="content" id="signUpForm">
+                <h1>Sign Up for Free</h1>
+
+                <div class="Name">
+                    <div class="User-fill">
+                        <input class="input" id="name" type="text" placeholder="First Name" required />
+                    </div>
+                    <div class="User-fill">
+                        <input class="input" id="lastName" type="text" placeholder="Last Name" required />
+                    </div>
+                </div>
+
+                <div class="User-fill">
+                    <input class="input" id="email" type="email" placeholder="Email Address" required
+                        autocomplete="off" />
+                </div>
+
+                <div class="User-fill">
+                    <input class="input" id="pwd" type="password" placeholder="Set A Password" required
+                        autocomplete="off" />
+                </div>
+                <button type="button" id="signUp" class="button button-block">Get Started</button>
+            </div>
+
+        </form>
+        <script src="../js/signUp.js"></script>
+    </body>
+</template>
+<template id="allLists">
+    <form id="form">
+   <div id="btnList">
+            <button class="nav-link btn" id="log-out">log out</button>
+            <button class="nav-link btn" id="temp" data-target="list-page">new list</button>
+            <button class="nav-link btn " id="search" data-target="All-meets-page">Search  list</button>
+           
+        </div>
+        <div id="search-form">
+            <form>
+                <br>
+ 
+                <input type="text" class="search-class" name="search" id="search-input" placeholder="search" required>
+            </form>
+        </div>
+    </form>
+    <div id="All-Lists"></div>
+    </div>
+    <script src="../js/allLists.js"></script>
+</template>
+<template id="newList">
+    <form id="allList">
+        <label id="newList">New list</label><br>
+        <input class="btn" id="name-of-list" type="text" placeholder="name-of-list:" required />
+        <label id="create">creation date:</label>
+        <label>MY LIST:</label>
+        <button type="button" class="btn" id="items" data-target="All-meets-page">new item:</button><br>
+        <div id="item">
+        </div>
+        <button type="button" class="btn" id="save" data-target="All-meets-page">save</button><br>
+
+    </form>
+    <script src="../js/newList.js"></script>
+</template>
+<template id="updateList">
+    <form id="allList">
+        <label id="newList">Update List</label><br>
+        <input class="btn" id="name-of-list" type="text" placeholder="name-of-list:" required />
+        <label id="create">creation date:</label>
+        <label>MY LIST:</label>
+        <div id="existItems">
+        </div>
+        <button type="button" class="btn" id="items" data-target="All-meets-page">new item:</button><br>
+        <div id="item">
+        </div>
+        <button type="button" class="btn" id="update" data-target="All-meets-page">update</button><br>
+
+    </form>
+    <script src="../js/updateList.js"></script>
+</template>
+<script src="../js/dataBase.js"></script>
+<script src="../js/spa.js"></script>
+<script src="../js/user.js"></script>
+<script src="../js/list.js"></script>
+<script src="../js/FXMLHttpRequest.js"></script>
+<script src="../js/server.js"></script>
+<script src="../js/netWork.js"></script>
+
+</html>
